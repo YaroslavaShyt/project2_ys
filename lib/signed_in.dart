@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project2_ys/check_signed_up.dart';
-import 'package:project2_ys/main_page.dart';
-import 'main.dart';
+
 
 class SignedIn extends StatelessWidget {
   SignedIn({super.key,  this.account});
@@ -87,7 +86,7 @@ class SignedIn extends StatelessWidget {
                   child:
                   OutlinedButton(
                     onPressed:() {
-                      var map = Map();
+                      var map = {};
                       (account.name + account.surname).split('').forEach((x) => map[x] = !map.containsKey(x) ? (1) : (map[x] + 1));
                       showDialog(
                           context: context,

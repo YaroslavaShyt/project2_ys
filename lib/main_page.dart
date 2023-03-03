@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'check_signed_up.dart';
-import 'signedIn.dart';
+import 'signed_in.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key, required this.title});
